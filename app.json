@@ -1,6 +1,16 @@
 {
   "expo": {
     "name": "localNotification",
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "13.4"
+          }
+        }
+      ]
+    ],
     "slug": "localNotification",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,13 +22,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rafaelneves1991.localNotification"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.rafaelneves1991.localNotification"
     },
     "web": {
       "favicon": "./assets/favicon.png"
